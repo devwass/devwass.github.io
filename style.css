@@ -88,7 +88,7 @@ p {
     height: 100vh;
     background: rgba(255, 255, 255, 0.3);
     opacity: 0;
-    animation: flash 9s infinite;
+    animation: flash 3s infinite;
 }
 
 @keyframes flash {
