@@ -81,14 +81,14 @@ p {
 
 
 .lightning {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(255, 255, 255, 0.3);
     opacity: 0;
-    animation: flash 5s infinite;
+    animation: flash 9s infinite;
 }
 
 @keyframes flash {
