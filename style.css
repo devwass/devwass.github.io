@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
-/* Full-screen video background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Background Video */
 #background-video {
     position: fixed;
     top: 0;
@@ -8,82 +22,67 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
-/* Black overlay with 40% opacity */
+/* Dark Overlay */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
-    z-index: 0;
-}
-
-/* Content inside the overlay */
-.content {
-    position: relative;
-    z-index: 1; /* Ensures text is above the overlay */
+    background: rgba(0, 0, 0, 0.5); /* 50% opacity */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    text-align: left;
     padding: 20px;
+}
+
+/* Content Box */
+.content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7); /* 70% opacity for a solid dark background */
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Headings */
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 /* Paragraphs */
 p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-/* Social media icons */
+/* Email */
+.email {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Social Links */
 .social-links {
     margin-top: 20px;
 }
 
 .icon {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: white;
-    transition: transform 0.3s ease-in-out;
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff;
+    transition: 0.3s;
 }
 
 .icon:hover {
-    transform: scale(1.2);
-    color: #00acee;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content {
-        padding: 20px;
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .icon {
-        font-size: 1.5rem;
-    }
+    color: #ffcc00;
 }
 
