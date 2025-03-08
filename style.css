@@ -1,13 +1,19 @@
 /* Import Montserrat Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the left */
+    height: 100vh;
     text-align: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Updated font */
+    padding: 20px 50px;
+    max-width: 600px;
 }
+
 
 body, html {
     width: 100%;
