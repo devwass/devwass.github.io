@@ -93,12 +93,12 @@ p {
     color: #1976D2;
 }
 .email {
-    color: #1976D2; /* Blue color */
+    color: #1976D2 !important; /* Blue color */
     font-weight: bold; /* Optional */
-    text-decoration: none; /* Optional: remove underline */
+    text-decoration: none !important; /* Optional: remove underline */
 }
 
 .email:hover {
-    text-decoration: underline; /* Optional: underline on hover */
+    text-decoration: underline !important; /* Optional: underline on hover */
 }
 
