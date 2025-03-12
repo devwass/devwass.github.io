@@ -63,9 +63,15 @@ body, html {
     to { transform: translateY(0); opacity: 1; }
 }
 
-.services-section {
+.services-section, .services {
+    opacity: 0;
     animation: slideDown 1s ease-in-out forwards;
     margin-top: 20px;
+}
+
+/* Delay animation for services to load smoothly */
+.services {
+    animation-delay: 0.5s;
 }
 
 /* Services Link Button */
