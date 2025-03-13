@@ -179,3 +179,19 @@ body, html {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+
+/* Mobile Fix: Ensure slide down works properly */
+@media (max-width: 768px) {
+    .overlay {
+        align-items: flex-start; /* Adjust alignment */
+        height: auto; /* Allow content to expand */
+        overflow-y: auto; /* Enable scrolling */
+    }
+
+    .services-section, .services {
+        opacity: 0;
+        animation: slideDown 1s ease-in-out forwards;
+        animation-delay: 0.5s; /* Delay animation for better effect */
+        position: relative; /* Ensure it's positioned properly */
+    }
+}
