@@ -195,3 +195,35 @@ body, html {
         position: relative; /* Ensure it's positioned properly */
     }
 }
+
+/* Fix Services Section on Mobile */
+@media (max-width: 768px) {
+    .overlay {
+        align-items: flex-start;
+        height: auto;
+        overflow-y: auto; /* Enables scrolling */
+    }
+
+    .services-section, .services {
+        opacity: 0;
+        animation: slideDown 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+        position: relative;
+    }
+
+    /* Ensure the entire services section is visible */
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Allow full scrolling */
+    body, html {
+        height: auto;
+        overflow-y: auto;
+    }
+}
