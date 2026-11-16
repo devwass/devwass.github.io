@@ -56,3 +56,12 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}
 .icon-arrow{display:inline-block;width:1em;height:1em;flex:0 0 1em;vertical-align:-.16em;overflow:visible}
 .cap-arrow .icon-arrow{width:20px;height:20px}
 .project-visit .icon-arrow{width:20px;height:20px}
+
+
+/* Real ASM Soft product screenshot and compact navigation CTA */
+.project-visual{min-height:0;aspect-ratio:2.2;padding:0;background:#071326;overflow:hidden}
+.project-visual:before{display:none}
+.asm-dashboard-photo{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:contain}
+.nav .nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:auto;height:auto;min-height:0;padding:10px 16px;border-radius:40px;white-space:nowrap}
+.nav .nav-cta .icon-arrow{width:14px;height:14px;flex:0 0 14px;margin:0}
+@media(max-width:650px){.project-visual{min-height:0;aspect-ratio:2.2;padding:0}}
